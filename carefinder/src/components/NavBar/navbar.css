@@ -1,0 +1,151 @@
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(14, 61, 183, 0.15);
+    position: fixed;
+    z-index: 2;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #082fe1;
+}
+
+.nav-links{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links li {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-links li a {
+    color: #000;
+    font-weight: 500;
+    padding: 0 20px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    flex-direction: column;
+}
+
+.nav-links li a:hover {
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid rgb(116, 116, 224);
+}
+
+
+.sign-btns {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.sign-btns .btn {
+    padding: 8px 25px;
+    background-color: #093e8e;
+    /* background-color: #0F52BA; */
+    color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sign-btns .btn:hover {
+    background-color: #274570;
+    /* background-color: rgb(76, 39, 211); */
+}
+
+.sign-btns .btn.sign-up {
+    margin-right: 20px;
+}
+
+.navbar__menu {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.navbar__menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar__menu ul li {
+    margin: 1rem;
+}
+
+.navbar__menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.navbar__menu ul li a:hover {
+    color: #382fe1;
+}
+
+@media screen and (max-width: 900px){
+    .nav-links {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .navbar__menu {
+        display: none;
+    }
+
+    .sign-btns {
+        display: none;
+    }
+}
+
+
+
+
